@@ -1,0 +1,54 @@
+tr,th {
+    padding: 10px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 100px 0;
+}
+
+.circular-button{
+    background-color: hsl(0,0%,20%);
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 50%; /* Perfect circle */
+    text-align: center;
+    cursor: pointer;
+}
+
+.operator-buttons {
+    background-color: orange;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 50%; /* Perfect circle */
+    text-align: center;
+    cursor: pointer;
+}
+
+#calculator {
+    background-color: black;
+    max-width: 500px;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    border: none;
+    background-color: hsl(0,0%,20%);
+    color: white;
+}
