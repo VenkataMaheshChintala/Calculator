@@ -1,18 +1,23 @@
-tr,th {
-    padding: 10px;
-}
-
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    display: flex;
 }
 
-table {
-    border-collapse: separate;
-    border-spacing: 100px 0;
+button{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
 }
 
 .circular-button{
@@ -42,13 +47,47 @@ table {
 #calculator {
     background-color: black;
     max-width: 500px;
+    border-radius: 15px;
 }
 
 #display {
     width: 100%;
     padding: 20px;
-    text-align: left;
+    text-align: right;
     border: none;
     background-color: hsl(0,0%,20%);
     color: white;
+    border-radius: 15px;
 }
+
+.sidebar{
+    background-color: gray;
+    width: 250px;
+    height: 100vh;
+    color: black;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a{
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
